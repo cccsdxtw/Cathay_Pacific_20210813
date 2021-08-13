@@ -14,17 +14,15 @@ import android.widget.TextView
 import com.example.cathay_pacific_20210813.R
 
 import com.example.githubusers.Model.Data.Users
-
+import com.squareup.picasso.Picasso
 
 
 class UsersListAdapter() : BaseAdapter() {
-//    private var mLayInf: LayoutInflater? = null
     var mIncomingC: Context? = null
     lateinit var mIncomingAU: Array<Users.Response>
     var mIncomingA: Activity? = null
 
     fun UsersListAdapter(activity: Activity, context: Context, AllUser: Array<Users.Response>) {
-//        mLayInf = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         mIncomingAU = AllUser
         mIncomingC = context
         mIncomingA = activity
@@ -62,6 +60,11 @@ class UsersListAdapter() : BaseAdapter() {
 
             txtView.text = mIncomingAU[position].login
 
+            Picasso.get()
+                .load(mIncomingAU[position].avatar_url)
+                .placeholder(R.drawable.refresh)
+                .error(R.drawable.xx)
+                .into(imgView)
 
             val example = View.OnClickListener {
                 // 寫要做的事...
