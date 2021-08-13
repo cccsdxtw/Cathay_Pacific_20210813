@@ -51,7 +51,7 @@ class UsersListAdapter() : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         //設定與回傳 convertView 作為顯示在這個 position 位置的 Item 的 View。
-        if (position < mIncomingAU.size) {
+        if (position < mIncomingAU.size && position != 100) {
             val layoutInflater = LayoutInflater.from(mIncomingC)
             val view = layoutInflater.inflate(R.layout.list_user, parent, false)
 
