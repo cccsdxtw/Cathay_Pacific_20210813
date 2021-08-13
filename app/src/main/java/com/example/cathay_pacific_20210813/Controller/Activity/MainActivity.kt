@@ -11,7 +11,7 @@ import com.google.gson.Gson
 import okhttp3.*
 import java.io.IOException
 
-//主頁
+//多人頁面（第一頁）
 class MainActivity : AppCompatActivity() {
 
     lateinit var mAllUserIV: ListView
