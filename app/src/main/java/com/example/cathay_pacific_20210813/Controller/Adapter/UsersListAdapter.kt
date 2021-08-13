@@ -11,10 +11,12 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.cathay_pacific_20210813.Controller.Activity.OneUserActivity
+import com.example.cathay_pacific_20210813.Model.Data.Users
+import com.example.cathay_pacific_20210813.Model.Uill.CircleTransform
 import com.example.cathay_pacific_20210813.R
 
-import com.example.githubusers.Model.Data.Users
-import com.example.githubusers.Model.Uill.CircleTransform
+
 import com.squareup.picasso.Picasso
 
 
@@ -70,8 +72,12 @@ class UsersListAdapter() : BaseAdapter() {
 
             val example = View.OnClickListener {
                 // 寫要做的事...
-
-
+                val intent = Intent()
+                intent.setClass(mIncomingC!!, OneUserActivity::class.java)
+                val bundle = Bundle()
+                bundle.putString("ID",mIncomingAU[position].login)
+                intent.putExtras(bundle)
+                mIncomingC!!.startActivity(intent)
             }
             view.setOnClickListener(example)
             return view

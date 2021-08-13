@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ListView
 import com.example.cathay_pacific_20210813.Controller.Adapter.UsersListAdapter
+import com.example.cathay_pacific_20210813.Model.Data.Users
 import com.example.cathay_pacific_20210813.R
-import com.example.githubusers.Model.Data.Users
 import com.google.gson.Gson
 import okhttp3.*
 import java.io.IOException
