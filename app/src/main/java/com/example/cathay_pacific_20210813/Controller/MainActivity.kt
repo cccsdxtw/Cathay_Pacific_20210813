@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
                 )
                 Log.d("GetAllUserForAPI::", "users:" + users)
                 Log.d("GetAllUserForAPI::", "users:" + users[1].login)
+                //2021/08/14 00:58:13以測試可以接到所需資料
             }
         })
 
