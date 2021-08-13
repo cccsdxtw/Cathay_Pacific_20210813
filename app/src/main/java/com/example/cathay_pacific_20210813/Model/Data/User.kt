@@ -1,13 +1,13 @@
 package com.example.cathay_pacific_20210813.Model.Data
 
-
-class Users() {
+ class User() {
      data class Response(
          val login:String,
          val id:Int,
          val node_id:String,
          val avatar_url:String,
          val gravatar_id:String,
+         val url:String,
          val html_url:String,
          val followers_url:String,
          val following_url:String,
@@ -19,6 +19,20 @@ class Users() {
          val events_url:String,
          val received_events_url:String,
          val type:String,
-         val site_admin:Boolean
+         val site_admin:Boolean,
+         val name:String,
+         val company:String,
+         val blog:String,
+         val location:String,
+         val email:String,
+         val hireable:String,
+         val bio:String,
+         val twitter_username:String,
+         val public_repos:Int,
+         val public_gists:Int,
+         val followers:Int,
+         val following:Int,
+         val created_at:String,
+         val updated_at:String
      )
  }

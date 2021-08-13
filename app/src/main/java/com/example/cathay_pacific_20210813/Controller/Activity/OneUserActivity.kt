@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.cathay_pacific_20210813.Model.Data.User
+import com.example.cathay_pacific_20210813.Model.Uill.CircleTransform
 import com.example.cathay_pacific_20210813.R
-import com.example.githubusers.Model.Uill.CircleTransform
+
 
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
@@ -64,7 +66,23 @@ class OneUserActivity : Activity() {
 
             override fun onResponse(call: Call?, response: Response?) {
                 //處理回來的 Response
+                val responseStr = response!!.body()!!.string()
+                val item = Gson().fromJson(responseStr, User.Response::class.java)
 
+                runOnUiThread {
+                    // Stuff that updates the UI
+                    mIDTV.text = item.name
+                    mNameTV.text = item.login
+                    mLocationTV.text = item.location
+                    mLinkTV.text = item.blog
+
+                    Picasso.get()
+                        .load(item.avatar_url)
+                        .transform(CircleTransform())
+                        .placeholder(R.drawable.refresh)
+                        .error(R.drawable.xx)
+                        .into(mUserPictureImage)
+                }
             }
         })
     }
