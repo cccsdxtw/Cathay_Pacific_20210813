@@ -79,6 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_marginBottom="30dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -96,8 +97,8 @@
 
                         <ImageView
                             android:id="@+id/NameIconImage"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/name"
                             tools:ignore="ContentDescription" />
@@ -132,6 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_marginBottom="30dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -149,8 +151,8 @@
 
                         <ImageView
                             android:id="@+id/LocationIconImage"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/location"
                             tools:ignore="ContentDescription" />
@@ -202,8 +204,8 @@
 
                         <ImageView
                             android:id="@+id/LinkIconImage"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/link"
                             tools:ignore="ContentDescription" />

@@ -5,7 +5,7 @@
     <dimen name="normal_margin">16dp</dimen>
     <dimen name="small_margin">8dp</dimen>
 
-    <dimen name="avatar_size">64dp</dimen>
+    <dimen name="avatar_size">40dp</dimen>
     <dimen name="avatar_size_large">128dp</dimen>
 
     <dimen name="large_font">18sp</dimen>
