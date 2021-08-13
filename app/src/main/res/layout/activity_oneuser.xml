@@ -48,7 +48,7 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
-                    android:id="@+id/NameTV"
+                    android:id="@+id/IDTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -113,7 +113,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/NameTextView"
+                            android:id="@+id/NameTV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="left"
