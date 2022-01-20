@@ -11,6 +11,7 @@ import com.google.gson.Gson
 import okhttp3.*
 import java.io.IOException
 
+//近來裡面試試
 //多人頁面（第一頁）
 class MainActivity : AppCompatActivity() {
 
